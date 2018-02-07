@@ -2,7 +2,8 @@ server:
   port: 8956
 spring:
   profiles.active: development
-  pidfile: shared/tmp/pids/server-eureka.pid
+  pid:
+    file: shared/tmp/pids/server-eureka.pid
   cloud:
     config:
       server:
