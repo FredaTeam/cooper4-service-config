@@ -3,7 +3,7 @@
 
     <timestamp key="today" datePattern="yyyy-MM-dd"/>
     <property name="project" value="server-config"/>
-    <property name="log_dir" value="logs"/>
+    <property name="log_dir" value="/home/work/config/common/logs"/>
 
 
     <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
@@ -30,7 +30,7 @@
 
 
     <root level="INFO">
-        <springProfile name="development">
+        <springProfile name="dev">
             <appender-ref ref="stdout"/>
         </springProfile>
 
